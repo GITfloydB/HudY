@@ -46,11 +46,9 @@ button:hover {
 
 /* Add styles for the arrow container */
 .go-to-page-container {
-    position: fixed;
-    bottom: 20px; /* Move the arrow container to the bottom */
-    width: 100%; /* Take full width */
-    display: flex;
-    justify-content: center; /* Center align items */
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 /* Add styles for the arrow link */
