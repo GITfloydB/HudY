@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'VT323', monospace; /* Set the font-family to VT323 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 36px; /* Increase font size for a bold headline */
+}
+
+.spacer {
+    height: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'VT323', monospace; /* Set the font-family to VT323 */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Existing styles */
+.spacer {
+    height: 20px;
+}
+
+/* New style to add more space between the button and player */
+.player-space {
+    height: 40px; /* Adjust the height to increase or decrease the space */
+}
+/* Add styles for the arrow container */
+.go-to-page-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Add styles for the arrow link */
+.go-to-page-arrow {
+    font-size: 48px; /* Adjust the font size of the arrow */
+    color: #007bff;
+    text-decoration: none;
+}
+
+.go-to-page-arrow:hover {
+    color: #0056b3;
+}
+
+/* Add styles for the text */
+.go-to-page-container p {
+    margin-top: 5px; /* Adjust the spacing between the arrow and text */
+    font-family: 'VT323', monospace; /* Use the VT323 font */
+}
+.go-back-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.go-back-arrow {
+    font-size: 48px; /* Adjust the font size of the arrow */
+    color: #007bff;
+    text-decoration: none;
+}
+
+.go-back-arrow:hover {
+    color: #0056b3;
+}
+
+.go-back-container p {
+    margin-top: 5px; /* Adjust the spacing between the arrow and text */
+    font-family: 'VT323', monospace; /* Use the VT323 font */
+}
