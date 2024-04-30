@@ -9,17 +9,21 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
+    padding: 20px; /* Add padding to the container */
+    text-align: center; /* Center align text */
+}
+
+img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
 }
 
 h1 {
     margin: 20px 0;
-    font-size: 36px; /* Increase font size for a bold headline */
+    font-size: 24px; /* Decrease font size for smaller screens */
 }
 
 .spacer {
-    height: 20px;
+    height: 10px; /* Decrease spacer height for smaller screens */
 }
 
 button {
@@ -37,21 +41,21 @@ button:hover {
 }
 
 .player-space {
-    height: 40px; /* Adjust the height to increase or decrease the space */
+    height: 20px; /* Decrease player space for smaller screens */
 }
 
+/* Add styles for the arrow container */
 .go-to-page-container {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    bottom: 20px; /* Move the arrow container to the bottom */
+    width: 100%; /* Take full width */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* Center align items */
 }
 
+/* Add styles for the arrow link */
 .go-to-page-arrow {
-    font-size: 48px; /* Adjust the font size of the arrow */
+    font-size: 36px; /* Decrease font size for smaller screens */
     color: #007bff;
     text-decoration: none;
 }
@@ -60,55 +64,8 @@ button:hover {
     color: #0056b3;
 }
 
+/* Add styles for the text */
 .go-to-page-container p {
     margin-top: 5px; /* Adjust the spacing between the arrow and text */
     font-family: 'VT323', monospace; /* Use the VT323 font */
-}
-
-.go-back-container {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.go-back-arrow {
-    font-size: 48px; /* Adjust the font size of the arrow */
-    color: #007bff;
-    text-decoration: none;
-}
-
-.go-back-arrow:hover {
-    color: #0056b3;
-}
-
-.go-back-container p {
-    margin-top: 5px; /* Adjust the spacing between the arrow and text */
-    font-family: 'VT323', monospace; /* Use the VT323 font */
-}
-
-/* Media Queries for Mobile Devices */
-@media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 24px; /* Decrease font size for smaller screens */
-    }
-
-    button {
-        padding: 8px 16px; /* Adjust button padding for smaller screens */
-    }
-
-    .go-to-page-container,
-    .go-back-container {
-        top: 10px; /* Adjust top position for smaller screens */
-        right: 10px; /* Adjust right position for smaller screens */
-        left: 10px; /* Adjust left position for smaller screens */
-    }
-
-    .go-to-page-arrow,
-    .go-back-arrow {
-        font-size: 36px; /* Decrease font size of arrows for smaller screens */
-    }
 }
