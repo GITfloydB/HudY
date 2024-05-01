@@ -69,3 +69,56 @@ button:hover {
     margin-top: 5px; /* Adjust the spacing between the arrow and text */
     font-family: 'VT323', monospace; /* Use the VT323 font */
 }
+/* Default styles for all screen sizes */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'VT323', monospace; /* Set the font-family to VT323 */
+}
+
+.letter-container {
+    max-width: 600px; /* Set maximum width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    text-align: justify; /* Justify text for better readability */
+}
+
+.letter-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.letter-container p {
+    margin-bottom: 10px;
+}
+
+.go-back-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.go-back-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.go-back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for screens smaller than 600px (typical mobile screens) */
+@media (max-width: 600px) {
+    .letter-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .go-back-container {
+        margin-top: 10px; /* Reduce margin for smaller screens */
+    }
+}
